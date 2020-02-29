@@ -40,7 +40,7 @@ namespace Method
             }
             else if (function == "Subtraction")
             {
-                Console.WriteLine("Your input equals: " + (inputValue1 + inputValue2));
+                Console.WriteLine("Your input equals: " + (inputValue1 - inputValue2));
             }
             else if (function == "Division" && inputValue2 == 0)
             {
