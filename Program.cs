@@ -11,7 +11,6 @@ namespace Method
             Console.WriteLine("Please input a random interger.");
 
             int inputValue1;
-            
             while (!int.TryParse(Console.ReadLine(), out inputValue1))
             {
                 Console.Clear();
@@ -31,16 +30,7 @@ namespace Method
 
             string function = Console.ReadLine();
 
-            const string M = "Multiplication";
-            const string S = "Subtraction";
-            
-            while 
-            {
-                Console.Clear();
-                Console.WriteLine("Please enter an operation. Type Addition, Subtraction, Division, or Multiplication.");
-            }
-
-            if (function == M)
+            if (function == "Multiplication")
             {
                 Console.WriteLine("Your input equals: " + (inputValue1 * inputValue2));
             }
@@ -52,14 +42,19 @@ namespace Method
             {
                 Console.WriteLine("Your input equals: " + (inputValue1 + inputValue2));
             }
+            else if (function == "Division" && inputValue2 == 0)
+            {
+                Console.WriteLine("Cannot use the value 0 as a divisor.");
+            }
             else if (function == "Division")
             {
                 Console.WriteLine("Your input equals: " + (inputValue1 - inputValue2));
             }
-            else if (function != (M || S )
+            else
             {
-                Console.WriteLine("Please retry your equation.");
+                Console.WriteLine("Please resubmit your input values using the correct format.");
             }
+
         }
     }
 }
