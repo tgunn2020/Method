@@ -54,7 +54,6 @@ namespace Method
             {
                 Console.WriteLine("Please resubmit your input values using the correct format.");
             }
-
         }
     }
 }
