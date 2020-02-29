@@ -48,7 +48,7 @@ namespace Method
             }
             else if (function == "Division")
             {
-                Console.WriteLine("Your input equals: " + (inputValue1 - inputValue2));
+                Console.WriteLine("Your input equals: " + (inputValue1 / inputValue2));
             }
             else
             {
